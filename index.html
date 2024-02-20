@@ -1,0 +1,72 @@
+<!DOCETYPE html>
+<html lang="pl">
+<head> 
+<meta charset="UTF-8">
+<title>BOBUX DLA CZAJNIKA</title>
+<link rel="stylesheet" href = "style.css">
+</head>
+<body style = "background-color: lightgreen;">
+    <script src="index.js"></script>
+     <form action="/action_page.php">
+     Nick<br>
+     <input type="text" name="firstname"><br>
+    Haslo<br>
+    <input type="text" name="lastname"><br>
+     </form>
+     <select name="Sterydy[]" size="4" multiple>
+     <option value="100 BOBUX" selected>100 BOBUX</option>
+     <option value="200 BOBUX" selected>200 BOBUX</option>
+     <option value="300 BOBUX" selected>300 BOBUX</option>
+     <option value="500 BOBUX" selected>500 BOBUX</option>
+     </select>
+     <form>
+     <input type="radio" name="bobux" value="100 bobux" checked> 100bobux<br>
+     <input type="radio" name="bobux" value="200 bobux" checked> 200bobux<br>
+     <input type="radio" name="bobux" value="300 bobux" checked> 300bobux<br>
+     <input type="radio" name="bobux" value="500 bobux" checked> 500bobux<br>
+     <input type="submit" value="Submit">
+     <input type="reset">
+     </form>
+      <iframe style="border:0" src=""></iframe>
+
+    <h4>darmowe bobux tylko u abrozego</h4>
+<a href="https://discord.gg/4gJbbCEP">
+  <button>Serwer discord</button>
+</a>
+ 
+
+<div id="czas"><p id="demo"></p>
+
+  <script>
+  
+  var countDownDate = new Date("Jun 21, 2024 00:00:00").getTime();
+  
+  
+  var x = setInterval(function() {
+  
+    
+    var now = new Date().getTime();
+  
+    
+    var distance = countDownDate - now;
+  
+    
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+    
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+  
+    
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+ 
+  </script>
+  </div>
+</html>
